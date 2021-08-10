@@ -3,11 +3,6 @@
 
 [![Daehan's GitHub stats](https://github-readme-stats.vercel.app/api?username=daehan0226)](https://github.com/anuraghazra/github-readme-stats)
 
-
-## Langauges
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=daehan0226&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
-
-
 ## Projects
 ### 1. Learn English Phrasal verbs and idioms
 #### Front
