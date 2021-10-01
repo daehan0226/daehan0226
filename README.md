@@ -31,3 +31,13 @@
 
 #### Back
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=daehan0226&repo=learn-english-server)](https://github.com/anuraghazra/github-readme-stats)
+
+
+
+
+## Thoughts
+### API Design
+
+### DB
+
+### Refactoring
