@@ -31,6 +31,9 @@
 
 #### Back
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=daehan0226&repo=learn-english-server)](https://github.com/anuraghazra/github-readme-stats)
+1. 데이터 구조(프론트-백-크롤링에서 개발비용 적게하면서, mysql-mongodb 선택, 키 네이밍 및 구조로 인한 프론트 계산 최소화, 추가 크롤링에 대한 확장성 유연성) 
+2. 단어 크롤링 방식 선택 selenium -> bs4 로 변경(헤더 추가 에러)
+3. 
 
 
 
@@ -41,3 +44,5 @@
 ### DB
 
 ### Refactoring
+
+
