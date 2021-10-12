@@ -44,7 +44,7 @@
 ### DB
 
 ### Refactoring
-*  객제지향프로그래밍으로 코드도 줄이고 가독성을 향상시켜보자 - 크롤러 개발[https://foxlee.tistory.com/79]
+*  [객제지향프로그래밍으로 코드도 줄이고 가독성을 향상시켜보자 - 크롤러 개발](https://foxlee.tistory.com/79)
 
 ### Http
 
