@@ -37,7 +37,9 @@
 
 
 ### API Design
-* API 네이밍 - 엔드포인트는 명사형으로 최대한, GET(조회), POST(생성), DELETE(삭제), PUT(업데이트, 그외 작업) // flat? nested?
+
+*  [1. RESTful API란?](https://foxlee.tistory.com/18)
+*  [2. RESTFUL API - RESPONSE STATUS CODE 적용하기](https://foxlee.tistory.com/85)
 
 ### DB
 
