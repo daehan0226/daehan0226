@@ -34,6 +34,12 @@
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=daehan0226&repo=learn-english-crawler)](https://github.com/daehan0226/learn-english-crawler)
 
 
+### 2. Furfellas
+##### Front
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=daehan0226&repo=furfellas)](https://github.com/daehan0226/furfellas)
+##### Back
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=daehan0226&repo=furfellas_server)](https://github.com/daehan0226/furfellas_server )
+
 
 ## 프로젝트 진행하면서 공부했던, 고민했던, 적용했던 주제들...
 
