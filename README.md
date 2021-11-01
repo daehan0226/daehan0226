@@ -34,10 +34,9 @@
 1. 데이터 구조(프론트-백-크롤링에서 개발비용 적게하면서, mysql-mongodb 선택, 키 네이밍 및 구조로 인한 프론트 계산 최소화, 추가 크롤링에 대한 확장성 유연성) 
 3.
 
-
+## 프로젝트 진행하면서 공부했던, 고민했던, 적용했던 주제들...
 
 ### API Design
-
 *  [1. RESTful API란?](https://foxlee.tistory.com/18)
 *  [2. RESTFUL API - RESPONSE STATUS CODE 적용하기](https://foxlee.tistory.com/85)
 
@@ -45,6 +44,4 @@
 
 ### Refactoring
 *  [객제지향프로그래밍으로 코드도 줄이고 가독성을 향상시켜보자 - 크롤러 개발](https://foxlee.tistory.com/79)
-
-### Http
 
