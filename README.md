@@ -46,7 +46,7 @@
 ### API Design
 * [1. RESTful API란?](https://foxlee.tistory.com/18)
 * [2. RESTFUL API - RESPONSE STATUS CODE 적용하기](https://foxlee.tistory.com/85)
-* 3. url 리소스 네이밍(작성중)
+* url 리소스 네이밍(작성중)
 ### DB
 * Raw SQL -> ORM 으로 변경하자(작성중)
 * MYSQL, REDIS, MONGODB (작성중) - 데이터 구조(프론트-백-크롤링에서 개발비용 적게하면서, mysql-mongodb 선택, 키 네이밍 및 구조로 인한 프론트 계산 최소화, 추가 크롤링에 대한 확장성 유연성) 
