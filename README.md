@@ -41,7 +41,7 @@
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=daehan0226&repo=furfellas_server)](https://github.com/daehan0226/furfellas_server )
 
 
-## 프로젝트 진행하면서 공부했던, 고민했던, 적용했던 주제들...
+## 공부했던, 고민했던, 적용했던 주제들...
 
 ### API Design
 1. [RESTful API란?](https://foxlee.tistory.com/18)
@@ -54,3 +54,8 @@
 
 ### Refactoring
 * [객제지향프로그래밍으로 코드도 줄이고 가독성을 향상시켜보자 - 크롤러 개발](https://foxlee.tistory.com/79)
+
+### Network
+* [네트워크 기본 개념](https://foxlee.tistory.com/50)
+* [DNS](https://foxlee.tistory.com/25)
+* [TCP/IP](https://foxlee.tistory.com/51)
