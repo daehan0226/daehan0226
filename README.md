@@ -59,3 +59,4 @@
 * [네트워크 기본 개념](https://foxlee.tistory.com/50)
 * [DNS](https://foxlee.tistory.com/25)
 * [TCP/IP](https://foxlee.tistory.com/51)
+* [사용자 인증 Cookie, Session, JWT](https://foxlee.tistory.com/27)
