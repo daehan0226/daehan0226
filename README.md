@@ -35,7 +35,7 @@
 
 
 ### 2. Furfellas
-![furfellas](./images/directory_n/furfellas.png)
+![furfellas](./images/furfellas.png)
 ##### Front
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=daehan0226&repo=furfellas)](https://github.com/daehan0226/furfellas)
 ##### Back
