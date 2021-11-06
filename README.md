@@ -47,6 +47,11 @@
 1. [RESTful API란?](https://foxlee.tistory.com/18)
 2. [RESPONSE STATUS CODE, 객체 활용 응답 처리(데코레이터, 클래스)](https://foxlee.tistory.com/85)
 3. url 리소스 네이밍(작성 예정)
+
+### TDD
+1. [테스트를 시작하게 된 계기](https://foxlee.tistory.com/82)
+2. [테스트 코드 작성하기(https://foxlee.tistory.com/83)
+
 ### DB
 1. [Raw SQL -> ORM 으로 변경하자](https://foxlee.tistory.com/84)
 2. 세션 저장 - MYSQL? REDIS?
