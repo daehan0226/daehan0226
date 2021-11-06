@@ -45,7 +45,7 @@
 
 ### API Design
 1. [RESTful API란?](https://foxlee.tistory.com/18)
-2. [RESTFUL API - RESPONSE STATUS CODE 적용하기](https://foxlee.tistory.com/85)
+2. [RESPONSE STATUS CODE, 객체 활용 응답 처리(데코레이터, 클래스)](https://foxlee.tistory.com/85)
 3. url 리소스 네이밍(작성 예정)
 ### DB
 1. [Raw SQL -> ORM 으로 변경하자](https://foxlee.tistory.com/84)
