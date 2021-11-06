@@ -26,6 +26,7 @@
 
 ## Projects
 ### 1. Learn English Phrasal verbs and idioms
+![english-app](./images/english-app.png)
 ##### Front
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=daehan0226&repo=learn-english)](https://github.com/daehan0226/learn-english)
 ##### Back
