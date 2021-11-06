@@ -24,7 +24,7 @@
 
 ## Projects
 ### 1. Learn English Phrasal verbs and idioms
-![english-app](./images/english-app.png)
+![english-app](./images/english_app_s.png)
 ##### Front
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=daehan0226&repo=learn-english)](https://github.com/daehan0226/learn-english)
 ##### Back
@@ -34,7 +34,7 @@
 
 
 ### 2. Furfellas
-![furfellas](./images/furfellas.png)
+![furfellas](./images/furfellas_s.png)
 ##### Front
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=daehan0226&repo=furfellas)](https://github.com/daehan0226/furfellas)
 ##### Back
