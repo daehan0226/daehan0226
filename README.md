@@ -50,7 +50,7 @@
 
 ### TDD
 1. [테스트를 시작하게 된 계기](https://foxlee.tistory.com/82)
-2. [테스트 코드 작성하기(https://foxlee.tistory.com/83)
+2. [테스트 코드 작성하기](https://foxlee.tistory.com/83)
 
 ### DB
 1. [Raw SQL -> ORM 으로 변경하자](https://foxlee.tistory.com/84)
