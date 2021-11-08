@@ -1,27 +1,6 @@
 # Hello, folks! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
-
 [![Daehan's GitHub stats](https://github-readme-stats.vercel.app/api?username=daehan0226)](https://github.com/anuraghazra/github-readme-stats)
-
-<h3>Things I code with</h3>
-<p>
-  <img alt="Python" src="https://img.shields.io/badge/-Python-F05032?&style=flat-square&logo=Python&logoColor=white"/>
-  <img alt="Mysql" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white"/>
-  <img alt="Flask" src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"/>  
-  <img alt="MongoDB" src="https://img.shields.io/badge/-MongoDB-13aa52?style=flat-square&logo=mongodb&logoColor=white" />
-  <img alt="React" src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" />
-  <img alt="NestJs" src="https://img.shields.io/badge/-NestJs-ea2845?style=flat-square&logo=nestjs&logoColor=white" />
-  <img alt="Docker" src="https://img.shields.io/badge/-Docker-46a2f1?style=flat-square&logo=docker&logoColor=white" />
-  <img alt="redux" src="https://img.shields.io/badge/-Redux-764ABC?style=flat-square&logo=redux&logoColor=white" />
-  <img alt="Sass" src="https://img.shields.io/badge/-Sass-CC6699?style=flat-square&logo=sass&logoColor=white" />
-  <img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
-  <img alt="github actions" src="https://img.shields.io/badge/-Github_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" />
-  <img alt="Insomnia" src="https://img.shields.io/badge/-Insomnia-5849BE?style=flat-square&logo=insomnia&logoColor=white" />
-  <img alt="npm" src="https://img.shields.io/badge/-NPM-CB3837?style=flat-square&logo=npm&logoColor=white" />
-  <img alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-  <img alt="Prettier" src="https://img.shields.io/badge/-Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=white" />
-</p>
-
 
 ## Projects
 ### 1. Learn English Phrasal verbs and idioms
@@ -30,15 +9,12 @@
 * [Back repository(Flask)](https://github.com/daehan0226/learn-english-server)
 * [Crawler repository](https://github.com/daehan0226/learn-english-crawler)
 
-
 ### 2. Furfellas
 ![furfellas](./images/furfellas_s.png)
 * [Project introduction page and Front repository(NextJs)](https://github.com/daehan0226/furfellas)
 * [Back repository(Flask)](https://github.com/daehan0226/furfellas_server)
 
-
 ## 공부했던, 고민했던, 적용했던 주제들...
-
 ### API Design
 1. [RESTful API란?](https://foxlee.tistory.com/18)
 2. [RESPONSE STATUS CODE, 객체 활용 응답 처리(데코레이터, 클래스)](https://foxlee.tistory.com/85)
