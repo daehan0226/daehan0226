@@ -6,13 +6,13 @@
 ### 1. Learn English Phrasal verbs and idioms
 ![english-app](./images/english_app_s.png)
 * [Project introduction page and Front repository(NextJs)](https://github.com/daehan0226/learn-english)
-* [Back repository(Flask)](https://github.com/daehan0226/learn-english-server)
+* [Back repository(Flask, Mysql, Docker)](https://github.com/daehan0226/learn-english-server)
 * [Crawler repository](https://github.com/daehan0226/learn-english-crawler)
 
 ### 2. Furfellas
 ![furfellas](./images/furfellas_s.png)
 * [Project introduction page and Front repository(NextJs)](https://github.com/daehan0226/furfellas)
-* [Back repository(Flask)](https://github.com/daehan0226/furfellas_server)
+* [Back repository(Flask, MongoDB, Docker)](https://github.com/daehan0226/furfellas_server)
 
 ## 공부했던, 고민했던, 적용했던 주제들...
 ### API Design
