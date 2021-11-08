@@ -8,7 +8,7 @@
 * [Project introduction page and Front repository(NextJs, S3)](https://github.com/daehan0226/furfellas)
 * [Back repository(Flask, MongoDB, Docker, EC2)](https://github.com/daehan0226/furfellas_server)
 ### 2. Learn English Phrasal verbs and idioms
-![english-app](./images/english_app_s.png) ![english-quiz](./images/english_app_quiz_s.png)
+![english-app](./images/english_app_main.png)
 * [Project introduction page and Front repository(NextJs, S3)](https://github.com/daehan0226/learn-english)
 * [Back repository(Flask, Mysql, Docker, EC2)](https://github.com/daehan0226/learn-english-server)
 * [Crawler repository](https://github.com/daehan0226/learn-english-crawler)
