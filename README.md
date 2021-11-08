@@ -3,17 +3,15 @@
 [![Daehan's GitHub stats](https://github-readme-stats.vercel.app/api?username=daehan0226)](https://github.com/anuraghazra/github-readme-stats)
 
 ## Projects
-### 1. Learn English Phrasal verbs and idioms
+### 1. Furfellas
+![furfellas](./images/furfellas_s.png)
+* [Project introduction page and Front repository(NextJs, S3)](https://github.com/daehan0226/furfellas)
+* [Back repository(Flask, MongoDB, Docker, EC2)](https://github.com/daehan0226/furfellas_server)
+### 2. Learn English Phrasal verbs and idioms
 ![english-app](./images/english_app_s.png)
 * [Project introduction page and Front repository(NextJs, S3)](https://github.com/daehan0226/learn-english)
 * [Back repository(Flask, Mysql, Docker, EC2)](https://github.com/daehan0226/learn-english-server)
 * [Crawler repository](https://github.com/daehan0226/learn-english-crawler)
-
-### 2. Furfellas
-![furfellas](./images/furfellas_s.png)
-* [Project introduction page and Front repository(NextJs, S3)](https://github.com/daehan0226/furfellas)
-* [Back repository(Flask, MongoDB, Docker, EC2)](https://github.com/daehan0226/furfellas_server)
-
 ## 공부했던, 고민했던, 적용했던 주제들...
 ### API Design
 1. [RESTful API란?](https://foxlee.tistory.com/18)
