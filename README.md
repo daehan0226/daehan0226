@@ -48,8 +48,7 @@
 
 ### DB
 1. [Raw SQL -> ORM 으로 변경하자](https://foxlee.tistory.com/84)
-2. 세션 저장 - MYSQL? REDIS?
-3. MYSQL - MONGODB - 데이터 구조(프론트-백-크롤링에서 개발비용 적게하면서, mysql-mongodb 선택, 키 네이밍 및 구조로 인한 프론트 계산 최소화, 추가 크롤링에 대한 확장성 유연성) 
+2. 관계형 VS 문서형 
 
 ### Refactoring
 * [객제지향프로그래밍으로 코드도 줄이고 가독성을 향상시켜보자 - 크롤러 개발](https://foxlee.tistory.com/79)
