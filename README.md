@@ -1,7 +1,7 @@
 # Hello, folks!
 ## Projects
 ### 1. [Furfellas](http://furfellas.foxlee.kr/)
-![furfellas](./images/furfellas_s.png)
+![furfellas](./images/furfellas_gallery.png)
 * [Project introduction page and Front repository(NextJs, S3)](https://github.com/daehan0226/furfellas)
 * [Back repository(Flask, MongoDB, Docker, EC2)](https://github.com/daehan0226/furfellas_server)
 ### 2. [Learn English Phrasal verbs and idioms](http://english.foxlee.kr/)
