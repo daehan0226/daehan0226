@@ -4,7 +4,7 @@
 </h1>
 
 - 💻 I got my hands dirty with coding since 2019.
-- 📙 I'm a self-taught programmer.
+- 🌳 I'm a self-taught programmer.
 - 😃 I'm looking to collaborate on Full Stack Web Development
 - ✒️ I'm currently learning TypeScript.
 - ⛳ OOP, TDD and Refactoring are my current interests.
@@ -35,7 +35,7 @@
 
 
 <details>
-  <summary><b>Languages and Tools - detail</b></summary>
+  <summary><b>🐶 Languages and Tools - details</b></summary>
   <ul>
     <li>
       <h6>What I'm good at</h6>
