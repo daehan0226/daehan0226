@@ -33,6 +33,15 @@
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
+
+<details>
+  <summary><b>Languages and Tools - detail</b></summary>
+  * What I'm good at
+    - flask, react
+
+</details>
+
+
 ## 🚀 Projects
 ### 1. [Furfellas](http://furfellas.foxlee.kr/)
 * [Project introduction page and Front repository(NextJs, S3)](https://github.com/daehan0226/furfellas)
