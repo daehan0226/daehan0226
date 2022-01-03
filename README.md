@@ -7,7 +7,7 @@
 - 📙 I'm a self-taught programmer.
 - 😃 I'm looking to collaborate on Full Stack Web Development
 - ✒️ I'm currently learning TypeScript.
-- ⛳ OOP, TDD and Refactoring are my recent interest.
+- ⛳ OOP, TDD and Refactoring are my current interests.
 
 ## 🛠️ Languages and Tools
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
