@@ -36,10 +36,16 @@
 
 <details>
   <summary><b>Languages and Tools - detail</b></summary>
-* What I'm good at
-  * Flask, React
-* What I'm learning now
-  * TypeScript
+  <ul>
+    <li>
+      <h6>What I'm good at</h6>
+      <p>Flask, React</p>
+    </li>
+    <li>
+      <h6>What I'm learning now</h6>
+      <p>TypeScript</p>
+        </li>
+  </ul>
 </details>
 
 
