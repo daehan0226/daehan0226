@@ -3,11 +3,11 @@
   <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 </h1>
 
-💻 I got my hands dirty with coding since 2019.
-📙 I'm a self-taught programmer.
-😃 I'm looking to collaborate on Full Stack Web Development
-✒️ I'm currently learning TypeScript.
-⛳ OOP, TDD and Refactoring are my recent interest.
+- 💻 I got my hands dirty with coding since 2019.
+- 📙 I'm a self-taught programmer.
+- 😃 I'm looking to collaborate on Full Stack Web Development
+- ✒️ I'm currently learning TypeScript.
+- ⛳ OOP, TDD and Refactoring are my recent interest.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
