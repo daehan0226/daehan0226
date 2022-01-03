@@ -33,20 +33,12 @@
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
-
-<details>
-  <summary><b>🐶 Languages and Tools - details</b></summary>
-  <ul>
-    <li>
-      <h6>What I'm good at</h6>
-      <p>Flask, React</p>
-    </li>
-    <li>
-      <h6>What I'm learning now</h6>
-      <p>TypeScript</p>
-        </li>
-  </ul>
-</details>
+## 🐶 What I can do
+* API 개발 : Flask 로 Restful API(적절한 상태코드 및 메서드 선택)
+* 데이터베이스 선정 및 설정 : 데이터에 따라 관계형 비관계형 데이터베이스를 선택하고 목적에 맞는 데이터 베이스 선정(MySQL, MongoDB, SQLite, Redis
+* 적절한 솔루션 선택: 서버는 EC2, 정적 웹 호스팅은 S3, 구글 드라이브를 통한 사진 저장
+* 클라이언드 개발: Redux, Context, Material-UI, Ant Design 적용
+* 배포: Github action을 통한 자동 배포, Docker compose 다중 컨테이너 관리(주로, 데이터베이스, API 서버, 웹 서버)
 
 
 ## 🚀 Projects
