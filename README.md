@@ -26,11 +26,9 @@
 
 ## Projects
 ### 1. [Furfellas](http://furfellas.foxlee.kr/)
-![furfellas](https://user-images.githubusercontent.com/47915302/141996996-1fee40c1-9a20-4167-8953-c85cd0724965.png)
 * [Project introduction page and Front repository(NextJs, S3)](https://github.com/daehan0226/furfellas)
 * [Back repository(Flask, MongoDB, Docker, EC2)](https://github.com/daehan0226/furfellas_server)
 ### 2. [Learn English Phrasal verbs and idioms](http://english.foxlee.kr/)
-![english-app](./images/english_app_main.png)
 * [Project introduction page and Front repository(NextJs, S3)](https://github.com/daehan0226/learn-english)
 * [Back repository(Flask, Mysql, Docker, EC2)](https://github.com/daehan0226/learn-english-server)
 * [Crawler repository](https://github.com/daehan0226/learn-english-crawler)
