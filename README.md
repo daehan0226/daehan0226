@@ -49,9 +49,9 @@
 * [Project introduction page and Front repository(NextJs, S3)](https://github.com/daehan0226/learn-english)
 * [Back repository(Flask, MongoDB, Redis, Docker, EC2)](https://github.com/daehan0226/learn-english-server)
 * [Crawler repository](https://github.com/daehan0226/learn-english-crawler)
-
+<!-- 
 ### 3. Patent prior art search
-* [Crawler](https://github.com/daehan0226/patent_crawler)
+* [Crawler](https://github.com/daehan0226/patent_crawler) -->
 
 ### 📕 Latest Blog Posts
 * [RESTful API란?](https://foxlee.tistory.com/18)
