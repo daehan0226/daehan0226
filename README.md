@@ -43,12 +43,15 @@
 
 ## 🚀 Projects
 ### 1. [Furfellas](http://furfellas.foxlee.kr/)
-* [Project introduction page and Front repository(NextJs, S3)](https://github.com/daehan0226/furfellas)
-* [Back repository(Flask, MongoDB, Docker, EC2)](https://github.com/daehan0226/furfellas_server)
+* [Project introduction page and Front repository(TypeScript React, S3)](https://github.com/daehan0226/furfellas-ts)
+* [API repository(Flask, MySQL, Docker, EC2, Google drive API)](https://github.com/daehan0226/furfellas_server)
 ### 2. [Learn English Phrasal verbs and idioms](http://english.foxlee.kr/)
 * [Project introduction page and Front repository(NextJs, S3)](https://github.com/daehan0226/learn-english)
-* [Back repository(Flask, Mysql, Docker, EC2)](https://github.com/daehan0226/learn-english-server)
+* [Back repository(Flask, MongoDB, Redis, Docker, EC2)](https://github.com/daehan0226/learn-english-server)
 * [Crawler repository](https://github.com/daehan0226/learn-english-crawler)
+
+### 3. Patent prior art search
+* [Crawler](https://github.com/daehan0226/patent_crawler)
 
 ### 📕 Latest Blog Posts
 * [RESTful API란?](https://foxlee.tistory.com/18)
