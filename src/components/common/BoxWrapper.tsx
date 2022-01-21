@@ -3,16 +3,18 @@ import Box from '@mui/material/Box';
 
 interface BoxWrapperProps {
     children: ReactChild | ReactChildren;
+    height?: number | string;
+    minHeight?: number | string;
   }
 
 
-const BoxWrapper = ({children}:BoxWrapperProps) => {
+const BoxWrapper = ({children, height='100%', minHeight=400}:BoxWrapperProps) => {
   return (
       <Box sx={{
         width: '100%',
-        height: '100%',
+        height,
+        minHeight,
         boxSizing: 'border-box',
-        minHeight: 400,
         padding: 1,
         backgroundColor: 'primary.dark',
         '&:hover': {
