@@ -12,6 +12,7 @@ const BoxWrapper = ({children}:BoxWrapperProps) => {
         width: '100%',
         height: '100%',
         minHeight: 400,
+        padding: 1,
         backgroundColor: 'primary.dark',
         '&:hover': {
           backgroundColor: 'primary.main',
