@@ -1,10 +1,10 @@
 import React from 'react';
 
-import {BoxWrapper} from "../common"
+import {BoxWrapper} from "../common";
 
 function Project() {
   return (
-    <BoxWrapper>
+    <BoxWrapper backgroundColor='secondary.dark' backgroundHoverColor='secondary.main' >
         <>
           <h1>Project</h1>
           <ul>
