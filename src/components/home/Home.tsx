@@ -5,7 +5,7 @@ import {BoxWrapper} from "../common"
 function Home() {
   return (
     <BoxWrapper>
-        <h1>Home</h1>
+        <h1 id="home">Home</h1>
     </BoxWrapper>
   );
 }

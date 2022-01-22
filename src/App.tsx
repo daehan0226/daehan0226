@@ -10,21 +10,22 @@ import {Project} from "./components/project"
 import {Blog} from "./components/blog"
 
 import theme from "./ui/theme"
+import {ScrollTop} from "./ui/scroll"
 
 function App() {
-
   return (
-    
     <ThemeProvider theme={theme}>
       <div className="App">
+        <div id="back-to-top-anchor" />
         <Header />
         <main>
           <Home />
           <About />
           <Project />
           <Blog />
-        </main>
+        </main> 
         <Footer />
+        <ScrollTop />
       </div>
     </ThemeProvider>
   );

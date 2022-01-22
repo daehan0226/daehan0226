@@ -6,7 +6,7 @@ function Project() {
   return (
     <BoxWrapper backgroundColor='secondary.dark' backgroundHoverColor='secondary.main' >
         <>
-          <h1>Project</h1>
+          <h1 id="project">Project</h1>
           <ul>
             <li>
               <div>Pet Albums</div>
