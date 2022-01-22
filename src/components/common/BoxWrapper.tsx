@@ -5,10 +5,18 @@ interface BoxWrapperProps {
     children: ReactChild | ReactChildren;
     height?: number | string;
     minHeight?: number | string;
+    backgroundColor?: string;
+    backgroundHoverColor?: string;
   }
 
 
-const BoxWrapper = ({children, height='100%', minHeight=400}:BoxWrapperProps) => {
+const BoxWrapper = ({
+  children, 
+  height='100%', 
+  minHeight=400, 
+  backgroundColor='primary.dark',
+  backgroundHoverColor='primary.main'
+  }:BoxWrapperProps) => {
   return (
       <Box sx={{
         width: '100%',
@@ -16,15 +24,15 @@ const BoxWrapper = ({children, height='100%', minHeight=400}:BoxWrapperProps) =>
         minHeight,
         boxSizing: 'border-box',
         padding: 1,
-        backgroundColor: 'primary.dark',
+        backgroundColor,
         '&:hover': {
-          backgroundColor: 'primary.main',
+          backgroundColor: backgroundHoverColor,
           opacity: [0.9, 0.8, 0.7],
         },
       }}>
           {children}
       </Box>
-  );
+  );  
 }
 
 export default BoxWrapper;
