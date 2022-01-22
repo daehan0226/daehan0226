@@ -1,5 +1,9 @@
 import React, {RefObject} from 'react';
 
-export type RefProps = {
+export interface RefProps {
     refObject: RefObject<HTMLDivElement>;
+}
+
+export interface IconBoxProps {
+    children?: JSX.Element|JSX.Element[];
 }

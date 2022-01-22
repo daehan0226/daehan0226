@@ -1,21 +1,28 @@
 import { createTheme } from '@mui/material/styles';
-import { lightBlue, lightGreen } from '@mui/material/colors';
 
 const theme = createTheme({
   palette: {
     primary: { 
-        light: lightBlue[300],
-        main: lightBlue[600],
-        dark: lightBlue[900],
+        light: '#1e242c',
+        main: '#252934',
+        dark: '#1b242f',
         contrastText: '#fff',
     },
     secondary: {
-      light: lightGreen[300],
-      main: lightGreen[600],
-      dark: lightGreen[900],
+      main: '#04c2c9',
+      dark: '#00a1a7',
       contrastText: '#fff',
     },
+    grey: {
+      100: "#f5f5f5",
+      200: "#eee",
+      300: "#8f9aa7",
+      400: "#262f38",
+      500: "#252934",
+      600: "#444649"
+    },
   },
+  
 });
 
 export default theme

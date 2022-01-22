@@ -1,13 +1,14 @@
 import React from 'react';
 
 import {RefProps} from "../../models"
-import {BoxWrapper} from "../common";
+import {BoxWrapper, BoxHeader} from "../common";
 
 const Project = ({refObject}:RefProps ) => {
   return (
-    <BoxWrapper backgroundColor='secondary.dark' backgroundHoverColor='secondary.main' >
-        <>
-          <h1 ref={refObject}>Project</h1>
+    <div ref={refObject}>
+      <BoxWrapper >
+        
+        <BoxHeader title={"Project"} />
           <ul>
             <li>
               <div>Pet Albums</div>
@@ -18,8 +19,8 @@ const Project = ({refObject}:RefProps ) => {
             <li></li>
             <li></li>
           </ul>
-        </>
-    </BoxWrapper>
+      </BoxWrapper>
+    </div>
   );
 }
 export default Project

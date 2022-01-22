@@ -1,6 +1,7 @@
 import React, {useRef} from 'react';
 
 import { ThemeProvider } from '@mui/material/styles'
+import Divider from '@mui/material/Divider';
 
 import './App.css';
 import {Header, Footer} from "./components"
@@ -44,6 +45,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App" id="top-anchor">
         <Header handleScroll={handleScrollClick}/>
+        <Divider sx={{backgroundColor: "secondary.light" , borderBottomWidth: 5 }}/>
         <main>
             <Home refObject={homeRef} />
             <About refObject={aboutRef} />
