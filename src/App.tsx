@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 
 import { ThemeProvider } from '@mui/material/styles'
 
@@ -13,16 +13,42 @@ import theme from "./ui/theme"
 import {ScrollTop} from "./ui/scroll"
 
 function App() {
+  const homeRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const projectRef =useRef<HTMLDivElement>(null);
+  const blogRef = useRef<HTMLDivElement>(null);
+
+  function handleScrollClick(target: string) {
+    let targetRef = homeRef;
+    switch (target) {
+      case 'About':
+        targetRef = aboutRef;
+        break;
+      case 'Projects':
+        targetRef = projectRef;
+        break;
+      case 'Blog':
+        targetRef = blogRef;
+        break;
+      default:
+        targetRef = homeRef;
+    }
+    targetRef.current?.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'start'
+    })
+  }
+
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
-        <div id="top-anchor" />
-        <Header />
+      <div className="App" id="top-anchor">
+        <Header handleScroll={handleScrollClick}/>
         <main>
-          <Home />
-          <About />
-          <Project />
-          <Blog />
+            <Home refObject={homeRef} />
+            <About refObject={aboutRef} />
+            <Project refObject={projectRef}/>
+            <Blog refObject={blogRef} />
         </main> 
         <Footer />
         <ScrollTop scrollTo='#top-anchor'/>

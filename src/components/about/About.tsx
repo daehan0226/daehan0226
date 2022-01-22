@@ -1,15 +1,12 @@
-import React, {useRef} from 'react';
+import React from 'react';
 
+import {RefProps} from "../../models"
 import {BoxWrapper} from "../common"
 
-function About() {
-  const aboutnRef = React.useRef<any>();
-
+const About = ({refObject}:RefProps ) => {
   return (
     <BoxWrapper>
-      <>
-        <h1 id="about-anchor" >About</h1>
-      </>
+        <h1 ref={refObject}>About</h1>
     </BoxWrapper>
   );
 }

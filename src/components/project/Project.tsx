@@ -1,12 +1,13 @@
 import React from 'react';
 
+import {RefProps} from "../../models"
 import {BoxWrapper} from "../common";
 
-function Project() {
+const Project = ({refObject}:RefProps ) => {
   return (
     <BoxWrapper backgroundColor='secondary.dark' backgroundHoverColor='secondary.main' >
         <>
-          <h1 id="project">Project</h1>
+          <h1 ref={refObject}>Project</h1>
           <ul>
             <li>
               <div>Pet Albums</div>
@@ -21,5 +22,4 @@ function Project() {
     </BoxWrapper>
   );
 }
-
-export default Project;
+export default Project

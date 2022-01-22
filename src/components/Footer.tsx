@@ -7,7 +7,6 @@ import Link from '@mui/material/Link';
 import { BoxWrapper } from './common';
 
 const Footer = () => {
-  console.log(process.env)
   return (      
     <BoxWrapper height={100} minHeight={100}>
         <footer>

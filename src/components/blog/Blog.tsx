@@ -1,11 +1,12 @@
-import React from 'react';
+import React, {RefObject} from 'react';
 
+import {RefProps} from "../../models"
 import {BoxWrapper} from "../common"
 
-function Blog() {
+const Blog = ({refObject}:RefProps ) => {
   return (
     <BoxWrapper>
-        <h1 id="blog-anchor">Blog</h1>
+        <h1 ref={refObject}>Blog</h1>
     </BoxWrapper>
   );
 }
