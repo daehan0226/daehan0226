@@ -16,7 +16,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <div id="back-to-top-anchor" />
+        <div id="top-anchor" />
         <Header />
         <main>
           <Home />
@@ -25,7 +25,7 @@ function App() {
           <Blog />
         </main> 
         <Footer />
-        <ScrollTop />
+        <ScrollTop scrollTo='#top-anchor'/>
       </div>
     </ThemeProvider>
   );

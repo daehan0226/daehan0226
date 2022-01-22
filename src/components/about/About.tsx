@@ -8,7 +8,7 @@ function About() {
   return (
     <BoxWrapper>
       <>
-        <h1 ref={aboutnRef} >About</h1>
+        <h1 id="about-anchor" >About</h1>
       </>
     </BoxWrapper>
   );

@@ -11,7 +11,7 @@ interface Props {
   }
   
 
-function ScrollTop(props: Props) {
+function ScrollTo(props: Props) {
     const { children, window } = props;
     const trigger = useScrollTrigger({
       target: window ? window() : undefined,
@@ -48,4 +48,4 @@ function ScrollTop(props: Props) {
     );
   }
   
-export default ScrollTop;
+export default ScrollTo;

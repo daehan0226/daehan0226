@@ -5,7 +5,7 @@ import {BoxWrapper} from "../common"
 function Blog() {
   return (
     <BoxWrapper>
-        <h1 id="blog">Blog</h1>
+        <h1 id="blog-anchor">Blog</h1>
     </BoxWrapper>
   );
 }
