@@ -6,6 +6,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import Link from '@mui/material/Link';
 
 import { IconBoxProps } from '../models';
+import { Typography } from '@mui/material';
 
 
 const IconBox = ({children}:IconBoxProps) => {
@@ -36,11 +37,11 @@ const Footer: FC = () => {
     <Box sx={{
       backgroundColor: "primary.main",
       width: '100%',
-      height: 200,
+      padding: 1,
     }}>
       <Box sx={{
       width: 200,
-      height: '100%',
+      height: 200,
       margin: '0 auto',
       display: 'flex',
       alignItems: "center",
@@ -56,7 +57,8 @@ const Footer: FC = () => {
           <EmailIcon />
         </Link>
       </IconBox>
-      </Box>
+      </Box>  
+      <Typography variant='body1' sx={{color: 'grey.100'}} >{process.env.REACT_APP_COPYRIGHT} {'\u00A9'}{new Date().getFullYear()}</Typography>
     </Box>
   );
 };
