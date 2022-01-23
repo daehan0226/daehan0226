@@ -8,22 +8,21 @@ import { EmailIconBox, GitHubIconBox } from './common/SocialIcons';
 const Footer: FC = () => {
   return (
     <Box sx={{
-      backgroundColor: "primary.main",
-      width: '100%',
+      backgroundColor: "primary.800",
       padding: 1,
     }}>
       <Box sx={{
-      width: 200,
+      width: 150,
       height: 200,
       margin: '0 auto',
       display: 'flex',
       alignItems: "center",
       justifyContent: "space-between"
     }}>
-      <GitHubIconBox />
-      <EmailIconBox />
+      <GitHubIconBox color="secondary" />
+      <EmailIconBox color="secondary" />
       </Box>  
-      <Typography variant='body1' sx={{color: 'grey.100'}} >{process.env.REACT_APP_COPYRIGHT} {'\u00A9'}{new Date().getFullYear()}</Typography>
+      <Typography variant='body1' sx={{color: 'primary.100'}} >{process.env.REACT_APP_COPYRIGHT} {'\u00A9'}{new Date().getFullYear()}</Typography>
     </Box>
   );
 };

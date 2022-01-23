@@ -6,8 +6,8 @@ const BoxWrapper = ({
   children, 
   height='100%', 
   minHeight=400, 
-  backgroundColor='grey.100',
-  backgroundHoverColor='grey.200',
+  backgroundColor='primary.50',
+  backgroundHoverColor='primary.100',
   padding= 1,
   hover=true,
   }:BoxWrapperProps) => {

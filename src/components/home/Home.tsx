@@ -18,8 +18,7 @@ const Home = ({refObject, handleScroll}:RefProps ) => {
   return (
     <div ref={refObject} style={{position: 'relative', height: '90vh'}}>
       <Box sx={{
-        backgroundColor:'grey.100',
-        backgroundHoverColor:'grey.200',
+        backgroundColor:'primary.100',
         margin: 'auto 0',
         width: '100%',
         height: '100%',
@@ -31,14 +30,14 @@ const Home = ({refObject, handleScroll}:RefProps ) => {
         <Typography variant='h3'>Hi! I'm Daehan Lee</Typography>
         <Typography variant='body1'>I'm web developer based in South Korea</Typography>
         <Box sx={{
-          width: 200,
+          width: 150,
           mt: 3,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between'
         }}>
-          <GitHubIconBox />
-          <EmailIconBox />
+          <GitHubIconBox color="primary" />
+          <EmailIconBox color="primary" />
         </Box>
       
       </Box>

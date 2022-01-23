@@ -20,12 +20,18 @@ const Header = ({handleScroll}:HeaderProps) => {
 
   }
   return (
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1}}>
         <AppBar position="static">
-          <Toolbar>
+          <Toolbar sx={{ backgroundColor: 'primary.800'}}>
             {pages.map((page) => (
                   <MenuItem key={page} onClick={()=>handleMenuClick(page)}>
-                    <Typography textAlign="center" >{page}</Typography>
+                    <Typography textAlign="center"
+                      sx={{
+                        color: 'primary.contrastText',
+                        '&:hover': {
+                          color: 'primary.500'
+                        }
+                    }} >{page}</Typography>
                   </MenuItem>
                 ))}
           </Toolbar>

@@ -3,17 +3,16 @@ import { SocialIconBoxProps } from '../../../models';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 
-const SocialIconBox = ({children, link}:SocialIconBoxProps) => {
+const SocialIconBox = ({children, link, color}:SocialIconBoxProps) => {
     return (
       <Link href={link}>
         <Box sx={{
           width: 55,
           height: 55,
-          backgroundColor: 'grey.300',
+          color: `${color}.700`,
+          // backgroundColor: `${color}.100` ,
           cursor: "pointer",
           '&:hover': {
-            backgroundColor: "secondary.dark",
-            boxShadow: "0 0 0 3px rgb(4 94 201 / 10%)",
             transform: "scale(0.9)",
           },
           display: 'flex',

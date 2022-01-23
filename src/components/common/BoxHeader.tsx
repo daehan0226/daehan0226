@@ -12,12 +12,12 @@ const BoxHeader = ({
           variant='h4' 
           mt={1} 
           sx={{
-            color: 'grey.700'
+            color: 'primary.700'
           }} 
         >{title}</Typography>
         <Divider 
           sx={{
-            backgroundColor: "grey.700" , 
+            backgroundColor: "primary.700" , 
             borderBottomWidth: 5, 
             width: title.length * 20, 
             margin: '10px auto'
