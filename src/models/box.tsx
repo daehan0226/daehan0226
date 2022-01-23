@@ -5,6 +5,7 @@ export interface BoxWrapperProps {
     backgroundColor?: string;
     backgroundHoverColor?: string;
     hover?: boolean;
+    padding?: number;
 }
 
 export interface BoxHeaderProps {

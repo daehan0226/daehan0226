@@ -6,13 +6,12 @@ import Zoom from '@mui/material/Zoom';
 
 interface Props {
     window?: () => Window;
-    children?: React.ReactElement;
     scrollTo: string;
   }
   
 
 function ScrollTop(props: Props) {
-    const { children, window } = props;
+    const { window } = props;
     const trigger = useScrollTrigger({
       target: window ? window() : undefined,
       disableHysteresis: true,
@@ -41,7 +40,7 @@ function ScrollTop(props: Props) {
           sx={{ position: 'fixed', bottom: 16, right: 16 }}
         >
           <Fab color="secondary" size="small" aria-label="scroll back to top">
-          <KeyboardArrowUpIcon />
+            <KeyboardArrowUpIcon />
           </Fab>
         </Box>
       </Zoom>
