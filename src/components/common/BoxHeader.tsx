@@ -8,8 +8,20 @@ const BoxHeader = ({
   }:BoxHeaderProps) => {
   return (
       <>
-        <Typography variant='h4' mt={1} sx={{color: 'grey.600'}} >{title}</Typography>
-        <Divider sx={{backgroundColor: "grey.500" , borderBottomWidth: 5, width: title.length * 20, margin: '10px auto' }}/>
+        <Typography 
+          variant='h4' 
+          mt={1} 
+          sx={{
+            color: 'grey.700'
+          }} 
+        >{title}</Typography>
+        <Divider 
+          sx={{
+            backgroundColor: "grey.700" , 
+            borderBottomWidth: 5, 
+            width: title.length * 20, 
+            margin: '10px auto'
+          }}/>
       </>
   );  
 }

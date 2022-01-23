@@ -3,5 +3,5 @@ import BoxHeader from "./BoxHeader";
 
 export {
     BoxWrapper,
-    BoxHeader
+    BoxHeader,
 }
