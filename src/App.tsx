@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 
 import { ThemeProvider } from '@mui/material/styles'
 import Divider from '@mui/material/Divider';
@@ -16,7 +16,7 @@ import {ScrollTop} from "./ui/scroll"
 function App() {
   const homeRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
-  const projectRef =useRef<HTMLDivElement>(null);
+  const projectRef = useRef<HTMLDivElement>(null);
   const blogRef = useRef<HTMLDivElement>(null);
 
   function handleScrollClick(target: string) {
@@ -47,7 +47,7 @@ function App() {
         <Header handleScroll={handleScrollClick}/>
         <Divider sx={{backgroundColor: "secondary.light" , borderBottomWidth: 5 }}/>
         <main>
-            <Home refObject={homeRef} />
+            <Home refObject={homeRef} handleScroll={handleScrollClick} />
             <About refObject={aboutRef} />
             <Project refObject={projectRef}/>
             <Blog refObject={blogRef} />
