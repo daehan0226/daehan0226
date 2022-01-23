@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {FC} from 'react';
 import Box from '@mui/material/Box';
 import {BoxWrapperProps} from "../../models/box"
 
-const BoxWrapper = ({
+const BoxWrapper: FC<BoxWrapperProps> = ({
   children, 
   height='100%', 
   minHeight=400, 
@@ -10,7 +10,7 @@ const BoxWrapper = ({
   backgroundHoverColor='primary.100',
   padding= 1,
   hover=true,
-  }:BoxWrapperProps) => {
+  }) => {
   return (
     <Box sx={{
       width: '100%',

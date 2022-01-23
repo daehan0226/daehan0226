@@ -1,19 +1,16 @@
 import React, {RefObject} from 'react';
 
+import IBlog from "./blog"
+import { SocialIconBoxProps, IconBoxProps } from './box';
+
 export interface RefProps {
     refObject: RefObject<HTMLDivElement>;
     handleScroll?: (target:string) => void
 }
 
-type colorType = "primary" | "secondary" |  "grey";
 
-export interface SocialIconBoxProps {
-    children: JSX.Element|JSX.Element[];
-    link? : string;
-    backgroundColor?: string;
-    color?: colorType;
-}
-
-export interface IconBoxProps {
-    color?: colorType;
+export type {
+    IBlog,
+    SocialIconBoxProps,
+    IconBoxProps
 }
