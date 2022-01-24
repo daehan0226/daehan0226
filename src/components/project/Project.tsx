@@ -1,13 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-import {RefProps} from "../../models"
+import {RefProps, IProject} from "../../models"
 import {BoxWrapper, BoxHeader} from "../common";
 
-import projects from "./projects"
-
+import {db} from "../../api/firebaseApi"
+import { getDocs, collection} from "firebase/firestore";
 
 const Project = ({refObject}:RefProps ) => {
-  const [openAllDetails, setOpenAllDetails] = useState<boolean>(false);
+  const [projects, setProjects] = useState<IProject[]>([]);
+  
+  const fetchData = async () => {
+    const querySnapshot = await getDocs(collection(db, "projects"));
+    let temp:  any = []
+    querySnapshot.forEach(doc=>{
+      temp.push(doc.data())
+    })
+    setProjects([...temp])
+  }
+
+  useEffect(() => {
+    fetchData()
+  },[])
 
   return (
     <div ref={refObject}>
