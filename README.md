@@ -59,7 +59,7 @@
 * [테스트를 시작하게 된 계기](https://foxlee.tistory.com/82)
 * [테스트 코드 작성하기](https://foxlee.tistory.com/83)
 * [Raw SQL -> ORM 으로 변경하자](https://foxlee.tistory.com/84)
-* [객제지향프로그래밍으로 코드도 줄이고 가독성을 향상시켜보자 - 크롤러 개발](https://foxlee.tistory.com/79)
+* [객체지향프로그래밍으로 코드도 줄이고 가독성을 향상시켜보자 - 크롤러 개발](https://foxlee.tistory.com/79)
 * [OOP - 상속,변수, 초기화- Crawling/Custom Exceptions](https://foxlee.tistory.com/108)
 * [쓰레드와 프로세스 공부하기](https://foxlee.tistory.com/107)
 * [네트워크 기본 개념](https://foxlee.tistory.com/50)
