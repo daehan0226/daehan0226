@@ -7,35 +7,19 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
-
 import { ITimeLineItem } from '../../models';
 
-import {db} from "../../api/firebaseApi"
-import { getDocs, collection} from "firebase/firestore";
-import compare from '../../utils';
+import {ErrorAlert, LoadingBox} from "../common"
+import useGetDocs from '../../hooks/useGetDocs';
 
-export default function AboutTimeline() {
-  
-  const [items, setItems] = useState<ITimeLineItem[]>([]);
-  
-  const fetchData = async () => {
-    const querySnapshot = await getDocs(collection(db, "timeline"));
-    let temp:  any = []
-    querySnapshot.forEach(doc=>{
-      temp.push(doc.data())
-    })
-    setItems([...temp.sort( compare )])
-  }
-
-  useEffect(() => {
-    fetchData()
-  },[])
-
-  
+export default function AboutTimeline() {  
+  const {data, loading, error} = useGetDocs<ITimeLineItem>("timeline");
 
   return (
     <Timeline>
-      {items.map(item=>(
+      {loading && (<LoadingBox />)}
+      {error && (<ErrorAlert msg={error} />)}
+      {data && data.map(item=>(
         <TimelineItem key={item.title}>
           <TimelineOppositeContent
             sx={{ m: 'auto 0' }}

@@ -1,34 +1,25 @@
 import { Box } from '@mui/system';
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
 import {RefProps, IBlog} from "../../models"
 import {BoxWrapper, BoxHeader} from "../common"
 import BlogCard from './BlogCard';
 
-import {db} from "../../api/firebaseApi"
-import { getDocs, collection} from "firebase/firestore";
+import {ErrorAlert, LoadingBox} from "../common"
+import useGetDocs from '../../hooks/useGetDocs';
 
 
 const Blog = ({refObject}:RefProps) => {
-  const [posts, setPosts] = useState<IBlog[]>([]);
   
-  const fetchData = async () => {
-    const querySnapshot = await getDocs(collection(db, "blog_posts"));
-    let temp:  any = []
-    querySnapshot.forEach(doc=>{
-      temp.push(doc.data())
-    })
-    setPosts([...temp])
-  }
-
-  useEffect(() => {
-    fetchData()
-  },[])
+  const {data, loading, error} = useGetDocs<IBlog>("blog_posts");
   return (
     <div ref={refObject}>
       <BoxWrapper>
-          <>
             <BoxHeader title={"Blog"} />
+            <>
+              {loading && (<LoadingBox />)}
+              {error && (<ErrorAlert msg={error} />)}
+            </>
             <Box
               sx={{
                 display: "grid",
@@ -40,11 +31,10 @@ const Blog = ({refObject}:RefProps) => {
                 }
               }}
               >
-              {posts.map((post, i)=> (
+              {data && data.map((post, i)=> (
                 <BlogCard key={i} post={post} />
               ))}
             </Box>
-          </>
       </BoxWrapper>
     </div>
   );

@@ -1,33 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import {RefProps, IProject} from "../../models"
 import {BoxWrapper, BoxHeader} from "../common";
 
-import {db} from "../../api/firebaseApi"
-import { getDocs, collection} from "firebase/firestore";
+import {ErrorAlert, LoadingBox} from "../common"
+import useGetDocs from '../../hooks/useGetDocs';
 
 const Project = ({refObject}:RefProps ) => {
-  const [projects, setProjects] = useState<IProject[]>([]);
-  
-  const fetchData = async () => {
-    const querySnapshot = await getDocs(collection(db, "projects"));
-    let temp:  any = []
-    querySnapshot.forEach(doc=>{
-      temp.push(doc.data())
-    })
-    setProjects([...temp])
-  }
-
-  useEffect(() => {
-    fetchData()
-  },[])
+  const {data, loading, error} = useGetDocs<IProject>("projects");
 
   return (
     <div ref={refObject}>
       <BoxWrapper >
-        <BoxHeader title={"Project"} />
+          <BoxHeader title={"Project"} />
           <>
-            {projects.map(project => (
+            {loading && (<LoadingBox />)}
+            {error && (<ErrorAlert msg={error} />)}
+            {data && data.map(project => (
               <div key={project.name}>
                 <p>
                   {project.name}
