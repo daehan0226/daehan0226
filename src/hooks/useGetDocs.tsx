@@ -2,8 +2,14 @@ import React, {useState, useEffect} from 'react';
 
 import {db} from "../api/firebaseApi"
 import { getDocs, collection} from "firebase/firestore";
+import {compare} from '../utils';
 
-const useGetDocs = <T extends any=any>(collectionName: string) => {
+type useGetDocsProps = {
+  collectionName: string,
+  sort?: boolean,
+}
+
+const useGetDocs = <T extends any=any>({collectionName, sort=false}:useGetDocsProps) => {
   const [data, setData] = useState<T[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>("");
@@ -15,7 +21,11 @@ const useGetDocs = <T extends any=any>(collectionName: string) => {
         querySnapshot.forEach(doc=>{
           temp.push(doc.data())
         })
-        setData([...temp])
+        if (sort) {      
+          setData([...temp.sort(compare)])
+        } else {
+          setData([...temp])
+        }
     }  catch (e) {
         setData([])
         setError("Oops, something went wrong. Try later again!")
