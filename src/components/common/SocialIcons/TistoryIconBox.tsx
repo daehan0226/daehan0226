@@ -6,7 +6,7 @@ import SocialIconBox from './SocialIconBox';
 
 const TistoryIconBox = ({color}:IconBoxProps) => {
   return (
-      <SocialIconBox link={process.env.REACT_APP_GITHUB} color={color}>
+      <SocialIconBox link={process.env.REACT_APP_TISTORY} color={color}>
         <ArticleIcon />
       </SocialIconBox>
   );
