@@ -2,6 +2,8 @@ import React, {RefObject} from 'react';
 
 import IBlog from "./blog"
 import IProject from "./project"
+import ITimeLineItem from "./about";
+
 import { SocialIconBoxProps, IconBoxProps } from './box';
 
 export interface RefProps {
@@ -13,6 +15,7 @@ export interface RefProps {
 export type {
     IBlog,
     IProject,
+    ITimeLineItem,
     SocialIconBoxProps,
-    IconBoxProps
+    IconBoxProps,
 }
