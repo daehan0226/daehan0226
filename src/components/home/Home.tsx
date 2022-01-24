@@ -4,7 +4,7 @@ import { Box } from '@mui/system';
 
 import {RefProps} from "../../models"
 import ArrowIcon from '../common/ArrowIcon';
-import { EmailIconBox, GitHubIconBox } from '../common/SocialIcons';
+import { EmailIconBox, GitHubIconBox, TistoryIconBox } from '../common/SocialIcons';
 
 
 const Home = ({refObject, handleScroll}:RefProps ) => {
@@ -38,6 +38,7 @@ const Home = ({refObject, handleScroll}:RefProps ) => {
         }}>
           <GitHubIconBox color="primary" />
           <EmailIconBox color="primary" />
+          <TistoryIconBox color="primary" />
         </Box>
       
       </Box>
