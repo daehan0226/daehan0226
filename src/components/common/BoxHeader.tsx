@@ -4,7 +4,9 @@ import Divider from '@mui/material/Divider';
 import { BoxHeaderProps } from '../../models/box';
 
 const BoxHeader = ({
-    title
+    title,
+    color='primary.700',
+    divierColor='primary.700'
   }:BoxHeaderProps) => {
   return (
       <>
@@ -12,12 +14,12 @@ const BoxHeader = ({
           variant='h4' 
           mt={1} 
           sx={{
-            color: 'primary.700'
+            color,
           }} 
         >{title}</Typography>
         <Divider 
           sx={{
-            backgroundColor: "primary.700" , 
+            backgroundColor: divierColor, 
             borderBottomWidth: 5, 
             width: title.length * 20, 
             margin: '10px auto'

@@ -9,7 +9,9 @@ export interface BoxWrapperProps {
 }
 
 export interface BoxHeaderProps {
-    title: string
+    title: string,
+    color?: string,
+    divierColor?: string
   }
 
   

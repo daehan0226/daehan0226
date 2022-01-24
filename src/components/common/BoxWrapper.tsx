@@ -6,7 +6,6 @@ const BoxWrapper: FC<BoxWrapperProps> = ({
   children, 
   height='100%',
   backgroundColor='primary.100',
-  backgroundHoverColor='primary.50',
   padding= 1,
   hover=true,
   }) => {
@@ -16,11 +15,7 @@ const BoxWrapper: FC<BoxWrapperProps> = ({
       height,
       boxSizing: 'border-box',
       padding,
-      backgroundColor,
-      '&:hover': {
-        backgroundColor: hover ? backgroundHoverColor : backgroundColor,
-        opacity: hover ? [0.9, 0.8, 0.7] : 1,
-      },
+      backgroundColor
     }}>
         {children}
     </Box>
