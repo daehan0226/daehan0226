@@ -1,5 +1,5 @@
+import React, {useState, useEffect} from 'react';
 import { Box } from '@mui/system';
-import React from 'react';
 
 import {RefProps, IBlog} from "../../models"
 import {BoxWrapper, BoxHeader} from "../common"
@@ -8,10 +8,9 @@ import BlogCard from './BlogCard';
 import {ErrorAlert, LoadingBox} from "../common"
 import useGetDocs from '../../hooks/useGetDocs';
 
-
 const Blog = ({refObject}:RefProps) => {
-  
-  const {data, loading, error} = useGetDocs<IBlog>("blog_posts");
+  const {data, loading, error} = useGetDocs<IBlog>({collectionName:"blog_posts", sort:true});
+
   return (
     <div ref={refObject}>
       <BoxWrapper>

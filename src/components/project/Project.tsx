@@ -7,7 +7,7 @@ import {ErrorAlert, LoadingBox} from "../common"
 import useGetDocs from '../../hooks/useGetDocs';
 
 const Project = ({refObject}:RefProps ) => {
-  const {data, loading, error} = useGetDocs<IProject>("projects");
+  const {data, loading, error} = useGetDocs<IProject>({collectionName:"projects"});
 
   return (
     <div ref={refObject}>

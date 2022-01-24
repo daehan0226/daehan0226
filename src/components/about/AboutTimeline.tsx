@@ -11,9 +11,10 @@ import { ITimeLineItem } from '../../models';
 
 import {ErrorAlert, LoadingBox} from "../common"
 import useGetDocs from '../../hooks/useGetDocs';
+import {convertDateToStr} from '../../utils';
 
 export default function AboutTimeline() {  
-  const {data, loading, error} = useGetDocs<ITimeLineItem>("timeline");
+  const {data, loading, error} = useGetDocs<ITimeLineItem>({collectionName:"timeline", sort:true});
 
   return (
     <Timeline>
@@ -27,7 +28,7 @@ export default function AboutTimeline() {
             variant="body2"
             color="text.secondary"
           >
-            {item.date}
+            {convertDateToStr(item.date.seconds)}
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />

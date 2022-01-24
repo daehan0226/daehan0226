@@ -7,6 +7,9 @@ export default interface IBlog {
         alt: string,
     },
     desc: string,
-    link: string
+    link: string,
+    date: {
+        seconds: number
+    }
 }
   

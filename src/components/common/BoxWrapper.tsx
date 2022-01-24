@@ -4,10 +4,9 @@ import {BoxWrapperProps} from "../../models/box"
 
 const BoxWrapper: FC<BoxWrapperProps> = ({
   children, 
-  height='100%', 
-  minHeight=400, 
-  backgroundColor='primary.50',
-  backgroundHoverColor='primary.100',
+  height='100%',
+  backgroundColor='primary.100',
+  backgroundHoverColor='primary.50',
   padding= 1,
   hover=true,
   }) => {
@@ -15,7 +14,6 @@ const BoxWrapper: FC<BoxWrapperProps> = ({
     <Box sx={{
       width: '100%',
       height,
-      minHeight,
       boxSizing: 'border-box',
       padding,
       backgroundColor,

@@ -1,6 +1,8 @@
 export default interface ITimeLineItem {
     dotColor : string,
-    date: string,
+    date: {
+        seconds: number
+    }
     title: string,
     subTitle: string,
   }
