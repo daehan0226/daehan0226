@@ -23,9 +23,9 @@ export default function AboutTimelineDetail({title, detail}:AboutTimelineDetailP
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
             id="panel1a-header"
-            sx={{flex:0,  justifyContent: "flex-start", "& .Mui-expanded":{marginBottom: 0}}}
+            sx={{flex:0,  justifyContent: "flex-start", "& .Mui-expanded":{marginBottom: "0 !important"}}}
             >
-            <Typography variant='h6'>{title}</Typography>
+            <Typography variant='h5'>{title}</Typography>
             </AccordionSummary>
             <AccordionDetails>
                 {detail && detail.map(({project, tasks})=>(

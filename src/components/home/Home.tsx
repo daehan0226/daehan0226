@@ -27,8 +27,8 @@ const Home = ({refObject, handleScroll}:RefProps ) => {
         alignItems: 'center',
         justifyContent: 'center'
       }} >
-        <Typography variant='h3'>Hi! I'm Daehan Lee</Typography>
-        <Typography variant='body1'>I'm web developer based in South Korea</Typography>
+        <Typography variant='h3'>Daehan Lee</Typography>
+        <Typography variant='body1'>Independent Web Developer based in South Korea</Typography>
         <Box sx={{
           width: 150,
           mt: 3,

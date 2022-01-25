@@ -13,7 +13,7 @@ const Project = ({refObject}:RefProps ) => {
   return (
     <div ref={refObject}>
       <BoxWrapper backgroundColor='primary.800' >
-          <BoxHeader title={"Project"} color={'primary.contrastText'} divierColor={'primary.contrastText'} />
+          <BoxHeader title={"Projects"} color={'primary.contrastText'} divierColor={'primary.contrastText'} />
           <>
             {loading && (<LoadingBox />)}
             {error && (<ErrorAlert msg={error} />)}
