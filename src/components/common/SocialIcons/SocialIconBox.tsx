@@ -5,8 +5,8 @@ import Box from '@mui/material/Box';
 const SocialIconBox = ({children, color}:SocialIconBoxProps) => {
     return (
         <Box sx={{
-            width: 55,
-            height: 55,
+            width: { mobile: 55, tablet: 65, laptop: 75},
+            height: { mobile: 55, tablet: 65, laptop: 75},
             color: `${color}.700`,
             cursor: "pointer",
             '&:hover': {

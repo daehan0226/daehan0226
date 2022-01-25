@@ -27,10 +27,10 @@ const Home = ({refObject, handleScroll}:RefProps ) => {
         alignItems: 'center',
         justifyContent: 'center'
       }} >
-        <Typography variant='h3'>Daehan Lee</Typography>
-        <Typography variant='body1'>Independent Web Developer based in South Korea</Typography>
+        <Typography variant='h2' sx={{ marginBottom: { mobile: 1, tablet: 2, laptop: 3} }} >Daehan Lee</Typography>
+        <Typography variant='h6'sx={{ marginBottom: { mobile: 2, tablet: 4, laptop: 6} }} >Independent Web Developer based in South Korea</Typography>
         <Box sx={{
-          width: 150,
+          width: { mobile: 150, tablet: 200, laptop: 250},
           mt: 3,
           display: 'flex',
           alignItems: 'center',

@@ -12,12 +12,12 @@ const Footer: FC = () => {
       padding: 1,
     }}>
       <Box sx={{
-      width: 150,
-      height: 200,
-      margin: '0 auto',
-      display: 'flex',
-      alignItems: "center",
-      justifyContent: "space-between"
+        width: { mobile: 150, tablet: 200, laptop: 250},
+        height: 200,
+        margin: '0 auto',
+        display: 'flex',
+        alignItems: "center",
+        justifyContent: "space-between"
     }}>
       <GitHubIconBox color="secondary" />
       <EmailIconBox color="secondary" />

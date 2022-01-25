@@ -18,13 +18,13 @@ export default function AboutTimeline() {
   
 
   return (
-    <Timeline>
+    <Timeline sx={{ padding: 0 }}>
       {loading && (<LoadingBox />)}
       {error && (<ErrorAlert msg={error} />)}
       {data && data.map(item=>(
         <TimelineItem key={item.title}>
           <TimelineOppositeContent
-            sx={{ m: 'auto 0' }}
+            sx={{ m: 'auto 0', padding: '8px 8px',}}
             align="right"
             variant="body2"
             color="text.secondary"
@@ -40,7 +40,7 @@ export default function AboutTimeline() {
             <TimelineDot sx={{backgroundColor: item.dotColor}} />
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent sx={{ py: '12px', px: 2, display:'flex', flexDirection:'column', alignItems: 'left', justifyContent:'center' }}>
+          <TimelineContent sx={{ display:'flex', padding: '8px 8px', flexDirection:'column', alignItems: 'left', justifyContent:'center' }}>
             <AboutTimelineDetail title={item.title} detail={item.detail} />
           </TimelineContent>
         </TimelineItem>

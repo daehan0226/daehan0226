@@ -5,7 +5,6 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { StyledEngineProvider } from '@mui/material/styles';
-import { Box } from '@mui/material';
 
 type AboutTimelineDetailProps = {
     title: string,
@@ -16,25 +15,31 @@ type AboutTimelineDetailProps = {
 }
 
 export default function AboutTimelineDetail({title, detail}:AboutTimelineDetailProps) {
+  
   return (
       <StyledEngineProvider injectFirst>
         <Accordion sx={{backgroundColor:"primary.100", boxShadow: "none"}} >
             <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-            sx={{flex:0,  justifyContent: "flex-start", "& .Mui-expanded":{marginBottom: "0 !important"}}}
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+                sx={{
+                    flex:0,  
+                    justifyContent: "flex-start", 
+                    padding: { mobile: 0, tablet: 1, laptop: 2}, 
+                    "& .Mui-expanded": 
+                    {marginBottom: "0 !important"}}}
             >
-            <Typography variant='h5'>{title}</Typography>
+            <Typography variant='h6' sx={{wordBreak: "break-word"}}>{title}</Typography>
             </AccordionSummary>
             <AccordionDetails>
                 {detail && detail.map(({project, tasks})=>(
-                    <Box sx={{margin:1}}>
-                        <Typography variant='body1' >{project}</Typography>
+                    <>
+                        <Typography variant='body1' sx={{paddingLeft:1}}>{project}</Typography>
                         {tasks.map((task)=>(
-                            <Typography variant='body2' sx={{paddingLeft:1}}>{task}</Typography>
+                            <Typography variant='body2' sx={{paddingLeft:2}}>{task}</Typography>
                         ))}
-                    </Box>
+                    </>
                 ))}
             </AccordionDetails>
         </Accordion>

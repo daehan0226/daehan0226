@@ -22,7 +22,7 @@ const Blog = ({refObject}:RefProps) => {
           <Box
             sx={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
+              gridTemplateColumns: { mobile: "100%", tablet: "repeat(auto-fill, minmax(360px, 1fr))"} ,
               gridGap: 10,
               margin: '50px auto',
               "> *" : {
