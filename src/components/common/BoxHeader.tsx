@@ -15,15 +15,16 @@ const BoxHeader = ({
           mt={1} 
           sx={{
             color,
+            marginBottom: { mobile: 1, tablet: 1.5, laptop: 2}
           }} 
         >{title}</Typography>
         <Divider 
           sx={{
             backgroundColor: divierColor, 
-            borderBottomWidth: 5, 
+            borderBottomWidth: { mobile: 2, tablet: 3, laptop: 4}, 
             width: title.length * 20, 
             margin: '10px auto',
-            marginBottom: 6
+            marginBottom: { mobile: 2, tablet: 3, laptop: 4}
           }}/>
       </>
   );  

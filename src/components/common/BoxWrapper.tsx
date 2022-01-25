@@ -6,15 +6,13 @@ const BoxWrapper: FC<BoxWrapperProps> = ({
   children, 
   height='100%',
   backgroundColor='primary.100',
-  padding= 1,
-  hover=true,
   }) => {
   return (
     <Box sx={{
       width: '100%',
       height,
       boxSizing: 'border-box',
-      padding,
+      padding: {mobile: 1, tablet: 2, laptop: 2.5},
       backgroundColor
     }}>
         {children}

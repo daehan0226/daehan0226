@@ -32,9 +32,9 @@ export default function AboutPersonality() {
     <Box
       sx={{display: "flex", flexWrap: "wrap", justifyContent: 'center'}}>
         {items.map((item)=> (
-          <Box key={item.title} sx={{ width: 250, margin: 2 }} >
+          <Box key={item.title} sx={{ width: 250, margin: { mobile: 1, tablet: 2, laptop: 3} }} >
               <item.icon sx={{ color: "secondary.600"}} />
-              <Typography variant="h6" sx={{ marginBottom: 1 }} >{item.title}</Typography>
+              <Typography variant="h6" sx={{ marginBottom: { mobile: 0.5, tablet: 1, laptop: 2} }} >{item.title}</Typography>
               <Typography variant="body2" sx={{wordBreak: "break-word"}}>{item.desc}</Typography>
           </Box>
         ))}

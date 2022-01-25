@@ -26,7 +26,7 @@ export default function AboutTimelineDetail({title, detail}:AboutTimelineDetailP
                 sx={{
                     flex:0,  
                     justifyContent: "flex-start", 
-                    padding: { mobile: 0, tablet: 1, laptop: 3}, 
+                    padding: { mobile: 0, tablet: 1, laptop: 2}, 
                     "& .Mui-expanded": 
                     {marginBottom: "0 !important"}}}
             >
@@ -35,9 +35,9 @@ export default function AboutTimelineDetail({title, detail}:AboutTimelineDetailP
             <AccordionDetails>
                 {detail && detail.map(({project, tasks})=>(
                     <>
-                        <Typography variant='body1' >{project}</Typography>
+                        <Typography variant='body1' sx={{paddingLeft:1}}>{project}</Typography>
                         {tasks.map((task)=>(
-                            <Typography variant='body2' sx={{paddingLeft:1}}>{task}</Typography>
+                            <Typography variant='body2' sx={{paddingLeft:2}}>{task}</Typography>
                         ))}
                     </>
                 ))}
