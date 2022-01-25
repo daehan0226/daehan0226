@@ -1,13 +1,17 @@
-import React, {FC} from 'react';
+import React from 'react';
 
 import { IconBoxProps } from '../../../models';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import SocialIconBox from './SocialIconBox';
 
+
 const GitHubIconBox = ({color}:IconBoxProps) => {
   return (
-      <SocialIconBox link={process.env.REACT_APP_GITHUB} color={color}>
-        <GitHubIcon />
+      <SocialIconBox color={color}>
+          <GitHubIcon  onClick={(e) => {
+            window.location.href=process.env.REACT_APP_GITHUB
+            e.preventDefault();
+          }}/>
       </SocialIconBox>
   );
 };
