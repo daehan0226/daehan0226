@@ -18,7 +18,7 @@ const Home = ({refObject, handleScroll}:RefProps ) => {
   return (
     <div ref={refObject} style={{position: 'relative', height: '90vh'}}>
       <Box sx={{
-        backgroundColor:'primary.100',
+        backgroundColor:'primary.50',
         margin: 'auto 0',
         width: '100%',
         height: '100%',
