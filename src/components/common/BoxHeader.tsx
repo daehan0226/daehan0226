@@ -22,7 +22,8 @@ const BoxHeader = ({
             backgroundColor: divierColor, 
             borderBottomWidth: 5, 
             width: title.length * 20, 
-            margin: '10px auto'
+            margin: '10px auto',
+            marginBottom: 6
           }}/>
       </>
   );  

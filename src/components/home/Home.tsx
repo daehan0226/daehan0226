@@ -18,7 +18,7 @@ const Home = ({refObject, handleScroll}:RefProps ) => {
   return (
     <div ref={refObject} style={{position: 'relative', height: '90vh'}}>
       <Box sx={{
-        backgroundColor:'primary.100',
+        backgroundColor:'primary.50',
         margin: 'auto 0',
         width: '100%',
         height: '100%',
@@ -27,8 +27,8 @@ const Home = ({refObject, handleScroll}:RefProps ) => {
         alignItems: 'center',
         justifyContent: 'center'
       }} >
-        <Typography variant='h3'>Hi! I'm Daehan Lee</Typography>
-        <Typography variant='body1'>I'm web developer based in South Korea</Typography>
+        <Typography variant='h3'>Daehan Lee</Typography>
+        <Typography variant='body1'>Independent Web Developer based in South Korea</Typography>
         <Box sx={{
           width: 150,
           mt: 3,
