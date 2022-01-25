@@ -14,26 +14,26 @@ const Blog = ({refObject}:RefProps) => {
   return (
     <div ref={refObject}>
       <BoxWrapper>
-            <BoxHeader title={"Blog"} />
-            <>
-              {loading && (<LoadingBox />)}
-              {error && (<ErrorAlert msg={error} />)}
-            </>
-            <Box
-              sx={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
-                gridGap: 10,
-                margin: '50px auto',
-                "> *" : {
-                  margin: "auto"
-                }
-              }}
-              >
-              {data && data.map((post, i)=> (
-                <BlogCard key={i} post={post} />
-              ))}
-            </Box>
+          <BoxHeader title={"Blog"} />
+          <>
+            {loading && (<LoadingBox />)}
+            {error && (<ErrorAlert msg={error} />)}
+          </>
+          <Box
+            sx={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
+              gridGap: 10,
+              margin: '50px auto',
+              "> *" : {
+                margin: "auto"
+              }
+            }}
+            >
+            {data && data.map((post, i)=> (
+              <BlogCard key={i} post={post} />
+            ))}
+          </Box>
       </BoxWrapper>
     </div>
   );
