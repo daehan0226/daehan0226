@@ -34,12 +34,12 @@ export default function AboutTimelineDetail({title, detail}:AboutTimelineDetailP
             </AccordionSummary>
             <AccordionDetails>
                 {detail && detail.map(({project, tasks})=>(
-                    <>
+                    <div key={project}>
                         <Typography variant='body1' sx={{paddingLeft:1}}>{project}</Typography>
-                        {tasks.map((task)=>(
-                            <Typography variant='body2' sx={{paddingLeft:2}}>{task}</Typography>
+                        {tasks.map((task,i)=>(
+                            <Typography key={`${project}-${i}`} variant='body2' sx={{paddingLeft:2}}>{task}</Typography>
                         ))}
-                    </>
+                    </div>
                 ))}
             </AccordionDetails>
         </Accordion>
