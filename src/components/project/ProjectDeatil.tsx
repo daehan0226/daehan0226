@@ -7,18 +7,19 @@ import { Link } from '@mui/material';
 import {IProject} from "../../models"
 
 type FeatureBoxProps = {
+  name: string;
   title: string;
   features?: string[]
 }
 
-const FeatureBox = ({title, features}:FeatureBoxProps) => {
+const FeatureBox = ({name, title, features}:FeatureBoxProps) => {
   return (
-    <Box>
-      <Typography variant="body1" color="primary.contrastText" sx={{ marginTop: 2}} >
+    <Box key={`${name}-${title}`} sx={{margin: {mobile:1, tablet: 2}}}>
+      <Typography variant="body1" color="primary.contrastText" mt={2} mb={2} >
         {title}
       </Typography>
-      {features && features.map(feature=>(
-        <Typography variant="body2" color="primary.contrastText" sx={{ marginLeft: 2, textAlign: 'left'}}  >{feature}</Typography>
+      {features && features.map((feature,i)=>(
+        <Typography key={`${name}-${title}-${i}`} variant="body2" color="primary.contrastText" sx={{ marginBottom: 1, textAlign: 'left'}}  >{feature}</Typography>
       ))
       }
     </Box>
@@ -38,7 +39,7 @@ const ProjectDetail = ({project}:ProjectDetailPropS) => {
           {project.name}
         </Typography>
       </Link>
-      <Box sx={{ display: 'flex', flexWrap:'wrap', alignItems: 'center', justifyContent:'center'}} >
+      <Box sx={{ display: 'flex', flexWrap:'wrap', alignItems: 'start', justifyContent:'center'}} >
         {project.image && (
             <Box sx={{width: {mobile: 200, tablet: 300}}}>
               <Link href={project.link}>
@@ -50,15 +51,15 @@ const ProjectDetail = ({project}:ProjectDetailPropS) => {
               </Link>
             </Box>
         )}
-        <Box sx={{padding: {mobile:1, tablet: 2}}}>
+        <Box sx={{ padding: {mobile:1, tablet: 2}}}>
           {project.front && (
-            <FeatureBox title={"Front"} features={project.front.features} />
+            <FeatureBox name={project.name} title={"Front"} features={project.front.features} />
           )}
           {project.back && (
-            <FeatureBox title={"Back"} features={project.back.features} />
+            <FeatureBox name={project.name} title={"Back"} features={project.back.features} />
           )}
           {project.crawler && (
-            <FeatureBox title={"Crawler"} features={project.crawler.features} />
+            <FeatureBox name={project.name} title={"Crawler"} features={project.crawler.features} />
           )}
         </Box>
       </Box>
