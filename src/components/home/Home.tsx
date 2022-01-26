@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {FC, useContext }from 'react';
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
 
@@ -6,8 +6,11 @@ import {RefProps} from "../../models"
 import ArrowIcon from '../common/ArrowIcon';
 import { EmailIconBox, GitHubIconBox, TistoryIconBox } from '../common/SocialIcons';
 
+import { LangContext } from '../../context/lang';
 
-const Home = ({refObject, handleScroll}:RefProps ) => {
+const Home: FC<RefProps>= ({refObject, handleScroll}) => {
+
+  const { dispatch: { translate }} = useContext(LangContext);
 
   const handleArrowClick = () => {
     if (handleScroll) {
@@ -27,8 +30,8 @@ const Home = ({refObject, handleScroll}:RefProps ) => {
         alignItems: 'center',
         justifyContent: 'center'
       }} >
-        <Typography variant='h2' sx={{ marginBottom: { mobile: 1, tablet: 2, laptop: 3} }} >Daehan Lee</Typography>
-        <Typography variant='h6'sx={{ marginBottom: { mobile: 2, tablet: 4, laptop: 6} }} >Independent Web Developer based in South Korea</Typography>
+        <Typography variant='h2' sx={{ marginBottom: { mobile: 1, tablet: 2, laptop: 3} }} >{translate('homeTitle')}</Typography>
+        <Typography variant='h6'sx={{ marginBottom: { mobile: 2, tablet: 4, laptop: 6} }} >{translate('homeSubTitle')}</Typography>
         <Box sx={{
           width: { mobile: 150, tablet: 200, laptop: 250},
           mt: 3,
