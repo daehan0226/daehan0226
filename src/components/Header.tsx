@@ -11,7 +11,16 @@ import Button from '@mui/material/Button';
 import { LangContext } from '../context/lang';
 
 const pages = ['Home', 'About', 'Projects', 'Blog'];
-
+const langs = [
+  {
+  value: 'KR',
+  name: '한국어'
+  },
+  {
+  value: 'EN',
+  name: 'English'
+  }
+]
 
 interface HeaderProps {
   handleScroll: (target:string) => void
@@ -24,15 +33,18 @@ const Header: FC<HeaderProps> = ({handleScroll}) => {
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
-  const handleClose = (value:string) => {
+  const handleClose = () => {
     setAnchorEl(null);
-    setLanguage(value)
-  };
+  }
 
   const handleMenuClick = (page: string) => {
     handleScroll(page)
   }
 
+  const handleLangClick = (lang: string) => {
+    setAnchorEl(null);
+    setLanguage(lang);
+  }
   return (
       <Box sx={{flexGrow: 1}}>
         <AppBar position="static">
@@ -76,14 +88,14 @@ const Header: FC<HeaderProps> = ({handleScroll}) => {
               open={open}
               onClose={handleClose}
             >
-              <MenuItem
-                onClick={()=>handleClose("KR")}>
-                {translate("langKr")}
-              </MenuItem>
-              <MenuItem
-                onClick={()=>handleClose("EN")}>
-                {translate("langEn")}
-              </MenuItem>
+              {langs.map(({value, name})=>(
+                <MenuItem
+                  key={value}
+                  value={value}
+                  onClick={()=>handleLangClick(value)} >
+                  {name}
+                </MenuItem>
+              ))}
             </Menu>
           </Toolbar>
         </AppBar>
