@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Box } from '@mui/system';
+import Box from '@mui/material/Box';
 
 import {RefProps, IBlog} from "../../models"
 import {BoxWrapper, BoxHeader} from "../common"
@@ -22,7 +22,7 @@ const Blog = ({refObject}:RefProps) => {
           <Box
             sx={{
               display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))",
+              gridTemplateColumns: { mobile: "100%", tablet: "repeat(auto-fill, minmax(360px, 1fr))"} ,
               gridGap: 10,
               margin: '50px auto',
               "> *" : {

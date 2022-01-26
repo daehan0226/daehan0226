@@ -14,9 +14,9 @@ export interface BlogCardProps {
 
 const BlogCard: FC<BlogCardProps> = ({post}) => {
   return (
-    <Card sx={{ width: 320, height: 260, display: "flex", flexDirection: "column" }} >
+    <Card sx={{ width: { mobile: "100%", tablet: 360}, height: 260, display: "flex", flexDirection: "column" }} >
       <CardContent>
-        <Typography gutterBottom variant="h6" component="div" color="primary.900" sx={{marginTop: 1}}>
+        <Typography gutterBottom variant="h5" component="div" color="primary.900" sx={{marginTop: 1}}>
           {post.title}
         </Typography>
         <Typography variant="body2" color="secondary.100" sx={{textAlign: 'right'}}>

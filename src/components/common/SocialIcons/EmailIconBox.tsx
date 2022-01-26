@@ -8,10 +8,11 @@ import SocialIconBox from './SocialIconBox';
 const EmailIconBox = ({color}:IconBoxProps) => {
   return (
       <SocialIconBox color={color} >
-        <EmailIcon 
-          onClick={(e) => {
-            window.location.href = `mailto:${process.env.REACT_APP_GMAIL}`;
-            e.preventDefault();
+        <EmailIcon
+            sx={{ fontSize: {mobile: 25, tablet: 30, laptop: 35} }}
+            onClick={(e) => {
+              window.location.href = `mailto:${process.env.REACT_APP_GMAIL}`;
+              e.preventDefault();
           }}
         />
       </SocialIconBox>
