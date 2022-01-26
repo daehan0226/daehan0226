@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Box } from '@mui/system';
+import Box from '@mui/material/Box';
 
 import {RefProps, IBlog} from "../../models"
 import {BoxWrapper, BoxHeader} from "../common"
