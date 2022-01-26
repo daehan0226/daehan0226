@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Typography from '@mui/material/Typography';
-
 import {RefProps, IProject} from "../../models"
 import {BoxWrapper, BoxHeader, ErrorAlert, LoadingBox} from "../common";
 
 import useGetDocs from '../../hooks/useGetDocs';
+import ProjectDetail from './ProjectDeatil';
+
 
 const Project = ({refObject}:RefProps ) => {
   const {data, loading, error} = useGetDocs<IProject>({collectionName:"projects"});
@@ -18,13 +18,7 @@ const Project = ({refObject}:RefProps ) => {
             {loading && (<LoadingBox />)}
             {error && (<ErrorAlert msg={error} />)}
             {data && data.map(project => (
-              <div key={project.name}>
-                <Typography variant="body1" color="primary.contrastText" sx={{ marginTop: 2}} >
-                  {project.name}
-                </Typography>
-                <p>
-                </p>
-              </div>
+                <ProjectDetail key={project.name} project={project}/>
             ))}
           </>
       </BoxWrapper>
