@@ -36,12 +36,10 @@ type ProjectDetailPropS = {
 const ProjectDetail = ({project}:ProjectDetailPropS) => {
 
   return (
-    <Box>
-      <Link href={project.link}>
-        <Typography variant="h6" color="secondary.700" sx={{ margin: 2}} >
-          {project.name}
-        </Typography>
-      </Link>
+    <Box >
+        <Link variant="h4" href={project.link} sx={{ margin: 2}} color="secondary.700">
+            {project.name}
+        </Link>
       <Box sx={{ display: 'flex', flexWrap:'wrap', alignItems: 'start', justifyContent:'center'}} >
         {project.image && (
             <Box sx={{width: {mobile: 200, tablet: 300}}}>
@@ -76,8 +74,8 @@ const ProjectDetail = ({project}:ProjectDetailPropS) => {
           sx={{
             backgroundColor: "primary.50", 
             borderBottomWidth: { mobile: 1, tablet: 1.5, laptop: 2}, 
-            width: "80%", 
-            margin: '10px auto',
+            width: "60%", 
+            margin: '20px auto'
           }}/>
     </Box>
                 
