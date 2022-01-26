@@ -3,6 +3,9 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { Link } from '@mui/material';
+import Divider from '@mui/material/Divider';
+import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
 
 import {IProject} from "../../models"
 
@@ -43,11 +46,17 @@ const ProjectDetail = ({project}:ProjectDetailPropS) => {
         {project.image && (
             <Box sx={{width: {mobile: 200, tablet: 300}}}>
               <Link href={project.link}>
-                <img 
-                  style={{width: "100%", height: "auto"}} 
-                  src={`${process.env.PUBLIC_URL}/images/${project.image}`} 
-                  alt={project.name}
+                <ImageListItem>
+                  <img
+                    src={`${process.env.PUBLIC_URL}/images/${project.image}`} 
+                    alt={project.name}
+                    loading="lazy"
+                    style={{width: "100%", height: "auto"}} 
                   />
+                  <ImageListItemBar
+                    title={"click to the webpage"}                    
+                  />
+                </ImageListItem>
               </Link>
             </Box>
         )}
@@ -63,6 +72,13 @@ const ProjectDetail = ({project}:ProjectDetailPropS) => {
           )}
         </Box>
       </Box>
+      <Divider 
+          sx={{
+            backgroundColor: "primary.50", 
+            borderBottomWidth: { mobile: 1, tablet: 1.5, laptop: 2}, 
+            width: "80%", 
+            margin: '10px auto',
+          }}/>
     </Box>
                 
   );
