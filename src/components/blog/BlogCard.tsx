@@ -14,7 +14,7 @@ export interface BlogCardProps {
 
 const BlogCard: FC<BlogCardProps> = ({post}) => {
   return (
-    <Card sx={{ width: { mobile: "100%", tablet: 360}, height: 260, display: "flex", flexDirection: "column" }} >
+    <Card sx={{ width: { mobile: "100%", tablet: 360}, height: 200, display: "flex", flexDirection: "column" }} >
       <CardContent>
         <Typography gutterBottom variant="h5" component="div" color="primary.900" sx={{marginTop: 1}}>
           {post.title}
@@ -22,9 +22,19 @@ const BlogCard: FC<BlogCardProps> = ({post}) => {
         <Typography variant="body2" color="secondary.100" sx={{textAlign: 'right'}}>
           {convertDateToStr(post.date.seconds)}
         </Typography>
-        <Typography variant="body1" color="primary.900" sx={{textAlign: 'left', marginTop: 2}} >
+        {/* <Typography 
+          variant="body1" 
+          color="primary.900" 
+          sx={{
+            textAlign: 'left', 
+            marginTop: 2, 
+            height: 80,
+            whiteSpace: "nowrap",
+            overflow: "hidden",
+            textOverflow: "ellipsis"
+            }} >
           {post.desc}
-        </Typography>
+        </Typography> */}
       </CardContent>
       <CardActions sx={{marginTop:'auto'}} >
         <Link href={post.link} sx={{ marginLeft: 'auto'}}>

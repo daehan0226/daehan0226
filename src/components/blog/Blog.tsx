@@ -9,7 +9,7 @@ import {ErrorAlert, LoadingBox} from "../common"
 import useGetDocs from '../../hooks/useGetDocs';
 
 const Blog = ({refObject}:RefProps) => {
-  const {data, loading, error} = useGetDocs<IBlog>({collectionName:"blog_posts", sort:true});
+  const {data, loading, error} = useGetDocs<IBlog>({collectionName:"tistory_posts", sort:true});
 
   return (
     <div ref={refObject}>
