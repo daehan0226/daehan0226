@@ -1,5 +1,6 @@
 export default interface IBlog {
     title: string,
+    category: string,
     image?: {
         component: "img",
         height: string,
