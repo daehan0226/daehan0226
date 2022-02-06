@@ -34,35 +34,3 @@
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
-## 🐶 What I can do
-* API 개발 : Flask 로 Restful API(적절한 상태코드 및 메서드 선택)
-* 데이터베이스 선정 및 설정 : 데이터에 따라 관계형 비관계형 데이터베이스를 선택 및 데이터 검색 유형에 맞춰 적절히 인덱스를 설정하고 목적에 맞는 데이터 베이스 선정(MySQL, MongoDB, SQLite, Redis)
-* 적절한 솔루션 선택: 서버는 EC2, 정적 웹 호스팅은 S3, 구글 드라이브를 통한 사진 저장
-* 클라이언드 개발: React - Redux, Context, Material-UI, Ant Design 적용
-* 배포: Github action을 통한 자동 배포, Docker compose 다중 컨테이너 관리(주로, 데이터베이스, API 서버, 웹 서버)
-
-## 🚀 Projects
-### 1. [Furfellas](http://furfellas.foxlee.kr/)
-* [Project introduction page and Front repository(TypeScript React, S3)](https://github.com/daehan0226/furfellas-ts)
-* [API repository(Flask, MySQL, Docker, EC2, Google drive API)](https://github.com/daehan0226/furfellas_server)
-### 2. [Learn English Phrasal verbs and idioms](http://english.foxlee.kr/)
-* [Project introduction page and Front repository(NextJs, S3)](https://github.com/daehan0226/learn-english)
-* [Back repository(Flask, MongoDB, Redis, Docker, EC2)](https://github.com/daehan0226/learn-english-server)
-* [Crawler repository](https://github.com/daehan0226/learn-english-crawler)
-<!-- 
-### 3. Patent prior art search
-* [Crawler](https://github.com/daehan0226/patent_crawler) -->
-
-### 📕 Latest Blog Posts
-* [RESTful API란?](https://foxlee.tistory.com/18)
-* [RESPONSE STATUS CODE, 객체 활용 응답 처리(데코레이터, 클래스)](https://foxlee.tistory.com/85)
-* [테스트를 시작하게 된 계기](https://foxlee.tistory.com/82)
-* [테스트 코드 작성하기](https://foxlee.tistory.com/83)
-* [Raw SQL -> ORM 으로 변경하자](https://foxlee.tistory.com/84)
-* [객체지향프로그래밍으로 코드도 줄이고 가독성을 향상시켜보자 - 크롤러 개발](https://foxlee.tistory.com/79)
-* [OOP - 상속,변수, 초기화- Crawling/Custom Exceptions](https://foxlee.tistory.com/108)
-* [쓰레드와 프로세스 공부하기](https://foxlee.tistory.com/107)
-* [네트워크 기본 개념](https://foxlee.tistory.com/50)
-* [DNS](https://foxlee.tistory.com/25)
-* [TCP/IP](https://foxlee.tistory.com/51)
-* [사용자 인증 Cookie, Session, JWT](https://foxlee.tistory.com/27)
